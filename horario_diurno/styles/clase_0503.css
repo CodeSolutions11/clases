@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    width: 300px;
+    margin: 20px 0 0 200px;
+    padding: 20px;
+    color: blue;
+}
+
+.container-card{
+    width: 300px;
+    margin-left: 150px;
+
+}
+
+.card{
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.card .image {
+    width: 300px;
+    height: 220px;
+}
+
+.content{
+    padding: 15px;
+}
+
+.content .card-title{
+    margin-bottom: 15px;
+    color: blue;
+}
+
+.content .card-paragraph{
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.content .buttom{
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 6px;
+}
+
