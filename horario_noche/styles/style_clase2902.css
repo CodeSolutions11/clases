@@ -1,0 +1,79 @@
+
+/* seleccion por etiqueta */
+
+div {
+    background-color: yellowgreen;
+}
+
+h1{
+    color: red;
+    background-color: black;
+}
+
+h3 {
+    color: whitesmoke;
+    background-color: black;
+}
+
+p {
+    color: white; /* comentario */
+}
+
+span {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* fin de seleccion por etiqueta */ 
+
+/*seleccion por clases */
+.contenedor {
+    background-color: black;
+}
+
+.titulo{
+    color: red;
+}
+
+.parrafo{
+    color: magenta;
+}
+
+.span {
+    color: gold;
+}
+
+
+
+
+
+
+
+
+
+/*fin de seleccion por clases */
+
+/* Seleccion por id */
+
+#div-1 {
+    background-color: blueviolet;
+}
+
+#div-3 {
+    background-color: greenyellow;
+}
+
+#h3-1{
+    color: red;
+}
+
+#span-1 {
+    color: chartreuse;
+}
