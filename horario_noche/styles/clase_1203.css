@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lobster', sans-serif;
+    
+
+}
+
+:root{
+    font-size: 18px;
+}
+
+
+
+/* .paragraph{
+    background-color: black;
+    color: white;
+    margin: 20px;
+    font: italic 200  20px/1.2 'Lobster', 'Times New Roman', Times, serif;
+    text-decoration: underline 1px wavy greenyellow;
+
+    text-align: justify;
+
+} */
+
+/* unidades absolutas = q, px, pt, mm, pc, cm, in  
+.paragraph{
+    font-size: 15px;
+*/
+/* 
+.container{
+
+
+    width: 500px;
+    height: 300px;
+    background-color: black;
+}
+
+.child{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+} */
+
+/* .conatiner{
+    font-size: 20px;
+}
+
+p{
+    margin: 10px;
+    background-color: black;
+    color: white;
+}
+
+
+.p-1{
+    font-size: 1em;
+}
+
+.p-2{
+    font-size:1em;
+}
+
+.caja{
+   
+    background-color: red;
+    width: 10em;
+    height: 10em;
+
+} */
+
+/* .caja{
+    width: 8rem;
+    height: 5rem;
+    background-color: red;
+} */
+
+.caja{
+    background-color: red;
+    width: 70vw;
+    height: 70vh;
+}
+
+.caja-2{
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+}
