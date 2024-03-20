@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+/* 
+body{
+    background-color: burlywood;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    background-color: black;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    gap: .5rem;
+}
+
+.caja-1{
+    background-color: red;
+
+    grid-column: 1/5;
+}
+
+.caja-2{
+    background-color: greenyellow;
+    grid-column: 1/5;
+}
+.caja-3{
+    background-color: blue;
+    grid-column: 1/5;
+}
+.caja-4{
+    background-color: purple;
+    grid-column: 1/5;
+}
+
+.caja-5{
+    background-color: white;
+    grid-column: 1/7;
+    grid-row: 5/7;
+}
+
+.caja-6{
+    background-color: blueviolet;
+
+    grid-column: 5/7;
+    grid-row: 1/5;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 1rem;
+}
+
+.box{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.container{
+    background-color: gray;
+    min-height: 10rem;
+    padding: 1rem 2rem;
+}
+
+@media (width <= 600px){
+   .container{
+    background-color: indigo;
+    color: white;
+    height: 30rem;
+   }
+}
+
+@media (width >= 750px){
+    .container{
+        background-color: greenyellow;
+        color: black;
+    }
+}
+
+@media ( 1000px >= width >= 900px  ) {
+    .container{
+        background-color: red;
+        color: white;
+    }
+}
