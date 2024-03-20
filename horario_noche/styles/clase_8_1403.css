@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lobster',sans-serif;
+    font-size: 20px;
+
+}
+
+.container{
+    max-width: 100vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.card{
+    overflow: hidden;
+    width: 15rem;
+    height: 20rem;
+
+    /* margin: 2rem 1rem; */
+
+    border-radius: 1rem;
+
+    background-color: aqua;
+}
+
+.image{
+    width: 100%;
+    height: 45%;
+}
+
+.content{
+    padding: 0.3rem;
+    text-align: center;
+    color: darkblue;
+}
+
+.card-title{
+    text-decoration: 0.2rem underline solid;
+    
+}
+
+.paragraph{
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+}
+
+.button{
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: skyblue;
+    padding: 0.2rem 0.5rem;
+    border: 0.1rem solid darkblue;
+    border-radius: 1rem;
+}
+
