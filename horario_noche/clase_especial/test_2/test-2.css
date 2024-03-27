@@ -1,0 +1,103 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: red;
+  
+  }
+  
+  .container{
+    background-color: black;
+    width: 80%;
+    height: 80%;
+  
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  
+  }
+  
+  .container-images{
+    background-color: aqua;
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  
+    gap: 1rem;
+    padding: 1rem;
+
+    color: white;
+    text-align: center;
+  }
+  
+  
+  .box-1{
+    background-color: lightcoral;
+    overflow: hidden;
+    border-radius: 2rem;
+
+    background-image: url(https://play-lh.googleusercontent.com/TxjQBGYHvMJsBX5dCvxQ4R-_4N-XrVhW6-p7D7TXanXKZMD8L-UkeMBWO1dtubGVNqU);
+    background-position: center;
+    background-size: cover;
+
+    cursor: pointer;
+
+   color: white;
+  }
+
+
+
+  /* .box-1 img{
+    width: 100%;
+    height: 60%;
+  } */
+  
+  .box-2{
+    background-color: lightgreen;
+  
+    border-radius: 2rem;
+
+    background-image: url(1.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .box-3{
+    background-color: lightslategrey;
+    border-radius: 2rem;
+    background-image: url(1.png);
+    background-position: center;
+    background-size: cover;
+
+  }
+  
+  .box-4{
+    background-color: blueviolet;
+  
+    border-radius: 2rem;
+
+    background-image: url(https://play-lh.googleusercontent.com/TxjQBGYHvMJsBX5dCvxQ4R-_4N-XrVhW6-p7D7TXanXKZMD8L-UkeMBWO1dtubGVNqU);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .box-5{
+    background-color: purple;
+  
+    border-radius: 2rem;
+
+    background-image: url(https://play-lh.googleusercontent.com/TxjQBGYHvMJsBX5dCvxQ4R-_4N-XrVhW6-p7D7TXanXKZMD8L-UkeMBWO1dtubGVNqU);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .box-6{
+    background-color:fuchsia;
+    border-radius: 2rem;
+
+    background-image: url(https://play-lh.googleusercontent.com/TxjQBGYHvMJsBX5dCvxQ4R-_4N-XrVhW6-p7D7TXanXKZMD8L-UkeMBWO1dtubGVNqU);
+    background-position: center;
+    background-size: cover;
+  }

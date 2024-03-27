@@ -1,0 +1,151 @@
+/* -- Realizado por Johalys Avila F:20/03/2024 -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+}
+
+/* --Contenedor Principal  --*/
+.container{
+  border: black .3rem dashed;
+  width:100%;
+  height: 100vh; 
+
+  display:flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+}
+
+/* -- Sección para Menu Horizontal --*/
+.Menu{
+  background-color: dimgray;
+  color: white;
+  width:100%;
+  height: 10%;
+  /* height: 8vh; */
+  margin: .1rem; 
+  padding: .5rem;
+  cursor: pointer;
+}
+
+/* -- Sección  Sidebar --*/
+.sidebar{
+    background-color:darkgrey;
+    color:black;
+    text-align: center;
+    /* width:15%; */
+    width: 20%;
+    /* height:100vh; */
+    height: 90%;
+    /* margin: .1rem;   */
+    padding: .5rem;
+}
+
+/* -- Lista del  Sidebar --*/
+ul{
+    margin: 0;  
+    padding: 0;
+}
+
+li{
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+/* -- Efecto anaranjado en lista sidebar -- */
+li:hover{
+  background: tomato;
+  color: white;
+}
+
+/* -- Contenedor de las Cajas --*/
+.container-box {
+  width:80%;
+  /* height: 100vh; */
+  height: 90%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: .8rem;
+}
+
+  .box-1 {
+    background-color: pink;
+    border: hotpink 4px solid;
+    cursor: pointer;
+    text-align: center;
+   
+
+    
+    /* grid-row: 1 /span  1; */
+    /* grid-template-columns: .8rem; */
+   
+}
+  .box-1 figure{
+    width: 100%;
+    height: 80%;
+    background-color: red;
+
+    background-image: url(https://play-lh.googleusercontent.com/TxjQBGYHvMJsBX5dCvxQ4R-_4N-XrVhW6-p7D7TXanXKZMD8L-UkeMBWO1dtubGVNqU);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .box-2 {
+    background-color: skyblue;
+    border: blue 4px solid;
+    cursor: pointer;
+    
+    /* grid-row: 1 / span 1; */
+    /* grid-template-columns: .8rem;   */
+}
+
+  .box-3 {
+    background-color: mediumaquamarine;
+    border: green 4px solid;
+    cursor: pointer;
+
+    /* grid-row: 2 / span 1; */
+    /* grid-template-columns: .8rem; */
+    cursor: pointer;
+}
+
+  .box-4 {
+    background-color: plum;
+    border: purple 4px solid;
+    cursor: pointer;
+    
+    /* grid-row: 2 / span 1; */
+    /* grid-template-columns: .8rem; */
+}
+
+  .box-5 {
+    background-color:burlywood;
+    border: darkgoldenrod 4px solid;
+    cursor: pointer;
+    
+    /* grid-row: 3 / span 1; */
+    /* grid-template-columns: .8rem; */
+    cursor: pointer;
+}
+  
+  .box-6 {
+    background-color: chocolate;
+    border: darkred 4px solid;
+    cursor: pointer;
+    
+    /* grid-row: 3 / span 1; */
+    /* grid-template-columns: .8rem; */
+  }
+
