@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(216, 229, 247) ;
+
+}
+
+.container{
+    width: 60rem;
+    height: 15rem;
+    background-color:lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.5rem black;  
+}
+
+.login{
+    width: 35%;
+    height: 90%;
+    background-color: white;
+    margin-left: 0.6rem;
+    /*border-radius: 1rem;*/
+    padding: 1rem 1rem;
+    
+}
+
+.links{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+
+    
+}
+.links a{
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: space-between; */
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+
+    padding: .5rem;
+
+}
+
+.links a:hover {
+    background-color: lightgreen;
+    border-radius: 0.5rem ;
+}
+
+.title-login{
+    width: 100%;
+    height: 15%;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    padding-bottom: .3rem;
+    border-width: 0 0  .1rem 0;
+    border-style: solid;
+    border-color: gray;
+}
+
+.form-login{
+    width: 100%;
+    height: 70%;
+}
+
+.material-symbols-outlined{
+    background-color: lightgrey;
+    position: absolute;
+    font-size: 33px;
+    border: solid 0.1rem  gray;
+    
+}
+
+.input-login{
+    width: 100%;
+    height: 15%;
+    margin: 0.5rem 0 1rem 0;
+    
+}
+
+.input{
+    width: 95%;
+    padding: 0.3rem 0 .3rem 1.8rem;
+
+}
+
+.button{
+    margin-top: 0.3rem;
+    padding: 0.2rem .5rem;
+    background-color: lightgray;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    opacity: 80%;
+
+}
+
+
+/* ********************** SLIDER ******************* */
+.slider{
+    width: 65%;
+    height: 90%;
+    display: flex;
+    background-color: cornflowerblue;
+    position: relative;
+    margin-right: 1.2rem;
+
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+    opacity: 60%;
+}
+
+.informacion{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(8, 248, 8);
+    opacity: 80%;
+    z-index: 10;
+    color: white;
+    overflow: hidden;
+    padding: .5rem;
+    text-align: center;
+    
+}
+.informacion h2{
+    color: black;
+    opacity: 100%;
+    
+}
+.informacion span{
+    font-size: .7rem;
+}
+
+.inicio{
+    margin-left: 0%;
+
+}
+
