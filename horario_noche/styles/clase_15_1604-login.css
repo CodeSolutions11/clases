@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lobster', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 20rem;
+    height: 25rem;
+    background-color: darkgrey;
+
+    border-radius: .5rem;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.container::before{
+    content: '';
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    background-color: blue;
+    background: linear-gradient(0deg, transparent, transparent, blue, blue, blue);
+
+    top: -50%;
+    left: -50%;
+
+    transform-origin: bottom right;
+    animation: animation-line 5s linear infinite;
+
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    background-color: blue;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg, transparent, transparent, blue, blue, blue);
+    transform-origin: bottom right;
+    animation: animation-line 5s linear infinite;
+    animation-delay: 3s;
+}
+
+.line{
+    position: absolute;
+    inset: 0;
+}
+
+.line::before{
+    content: '';
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    background-color: red;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg, transparent, transparent, red, red, red);
+    transform-origin: bottom right;
+    animation: animation-line 5s linear infinite;
+    animation-delay: -3s;
+}
+
+.line::after{
+    content: '';
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    background-color: red;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg, transparent, transparent, red, red, red);
+    transform-origin: bottom right;
+    animation: animation-line 5s linear infinite;
+    animation-delay: -6s;
+
+}
+
+
+@keyframes animation-line{
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* ********* Empieza el login *********** */
+
+.login{
+    background-color: black;
+    padding: 2.5rem 2rem;
+
+    position: absolute;
+    inset: .3rem;
+
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 5;
+}
+
+.login-title{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+}
+
+
+.input-login{
+    width: 15rem;
+
+    margin-top: 2rem;
+}
+
+.input-login .input{
+    width: 100%;
+    padding: .5rem 0;
+    border-radius: .5rem;
+}
+
+.input-login .input-login_span{
+    color: white;
+}
+
+.button{
+    margin-top: .7rem;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    opacity: 80%;
+}
+
+.login-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-links .link{
+    font-size: .9rem;
+    color: white;
+
+    margin: .5rem 0;
+    text-decoration: none;
+}
