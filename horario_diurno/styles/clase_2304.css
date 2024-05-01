@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+    display: grid;
+
+    grid-template-rows: 12% 1fr 10%;
+}
+
+
+/* ************NAVBAR********************* */
+
+.navbar{
+    background-color: black;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.navbar__logo{
+    width: 10%;
+    height: 80%;
+}
+
+.navbar__pages{
+    /* width: 50%; */
+    display: flex;
+    gap: 1rem;
+    /* justify-content: space-evenly; */
+}
+
+.navbar__pages--page{
+    text-decoration: none;
+    padding: .3rem .7rem;
+    color: black;
+    background-color: lightskyblue;
+    border-radius: .3rem;
+}
+.navbar__pages--page:hover{
+    background-color: white;
+    color: lightskyblue;
+}
+
+/* ************END NAVBAR********************* */
+
+/* ************CONTENT********************* */
+.content{
+
+    /* background-image: url(../images/code_dark.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+}
+
+.content__titulo{
+    height: 20%;
+    width: 50%;
+    color: white;
+    font-size: 2rem;
+}
+
+.content__parrafo{
+    height: 20%;
+    width: 60%;
+    color: white;
+    padding-top: 1rem;
+}
+
+.content__cards{
+    height: 40%;
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,18%);
+    grid-template-rows: 80%;
+
+    justify-content: center;
+    gap: 1rem;
+}
+
+.content__cards--card{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.content__cards--card__icon{
+   font-size: 3rem;
+   color: blue;
+}
+
+
+
+
+.content__button{
+
+    background-color: lightskyblue;
+
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: black;
+    text-decoration: none;
+
+    margin-top: .5rem;
+}
+.content__button:hover{
+    background-color: white;
+    color: rgb(21, 152, 233);
+}
+
+
+
+
+/* **************END CONTENT********************* */
+
+
+
+/* ************FOOTER********************* */
+.footer{
+    background-color: gray;
+}
