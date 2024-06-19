@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+}
+
+/* .span{
+    font-size: 2rem;
+    background-color: red;
+}
+
+
+.span::before{
+    content: 'dsjkdfa';
+    color: white;
+    background-color: black;
+
+}
+
+
+.span::after{
+    content:'------------>';
+    color: red;
+    background-color: greenyellow;
+}
+
+
+.bold::before{
+    content: '<<   ';
+    color: red;
+}
+
+.bold::after{
+    content: ' >>';
+    color: red;
+} */
+/*
+.box{
+    width: 20rem;
+    height: 30rem;
+    background: red;
+    border-radius: 2rem;
+
+ 
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: linear; 
+
+     transition: all 3s linear; 
+
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.box div{
+    background-color: black;
+}
+
+
+.box .box-1{
+    grid-column: span 2;
+    background-color: blue ;
+
+    transition: all 2s linear;
+}
+
+.box .box-1:hover{
+    background-color: greenyellow;
+}
+
+
+/* .box:hover{
+    background: rgb(23, 209, 23);
+
+    border: .3rem dashed black;
+
+
+} */
+
+
+.box{
+    background-color: red;
+    width: 20rem;
+    height: 25rem;
+
+    border-radius: .5rem;
+
+    position: relative;
+
+    /* overflow: hidden; */
+}
+
+.box::before{
+    content: '';
+    width: 20rem;
+    height: 25rem;
+    background-color: cyan;
+    border-radius: .5rem;
+
+    position: absolute;
+    top: -40%;
+    left: -40%;
+
+    animation: change-color 2s linear infinite;
+}
+
+.box::after{
+    content: '';
+    width: 20rem;
+    height: 25rem;
+    background-color: cyan;
+    border-radius: .5rem;
+
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+    animation: change-color 2s linear infinite;
+
+}
+
+@keyframes change-color{
+    0%{
+        background-color: rgb(51, 227, 89);
+        width: 20rem;
+        height: 35rem;
+    }
+    50%{
+        background-color: cyan;
+
+    }
+    100%{
+        background-color: blueviolet;
+        width: 15rem;
+        height: 20rem;
+    }
+}
+
+.box-1{
+    /* width: 80%;
+    height: 80%; */
+    background-color: black;
+
+    position: absolute;
+    /* top: .3rem;
+    left: .3rem;
+    right: .3rem;
+    bottom: .3rem; */
+
+    inset: .3rem;
+
+    /* z-index: 2; */
+}

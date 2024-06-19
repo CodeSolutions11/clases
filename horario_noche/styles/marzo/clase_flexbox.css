@@ -1,0 +1,71 @@
+/* h2{
+    display: inline-block;
+
+    height: 70px;
+    width: 150px;
+    background-color: red;
+
+    overflow: hidden;
+}
+
+p{
+    display: inline;
+
+    height: 120px;
+    background-color: green;
+}
+
+b{
+    margin: 20px;
+    display: block;
+    background-color: blueviolet;
+
+    height: 50px;
+} */
+
+/* 
+.container{
+    display: flex;
+}
+
+.caja-negra{
+    display: flex;
+    /* eje vertical 
+    align-items: center;
+    /* eje horizontal 
+    justify-content:center; 
+
+    gap: 30px;
+
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color: black;
+}
+
+.caja-roja{
+    
+
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color: red;
+}
+
+
+.caja-1{
+    
+
+    width: 100px;
+    height: 100px;
+
+    background-color: red;
+}
+.caja-2{
+    
+
+    width: 100px;
+    height: 100px;
+
+    background-color: blueviolet;
+} */

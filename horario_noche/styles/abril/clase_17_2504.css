@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+:root{
+    --gradient: linear-gradient(90deg, blue, red, yellow);
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-1{
+    background-color: red;
+    width: 10rem;
+    height: 10rem;
+}
+
+.box-1:hover{
+    position: relative;
+    z-index: 5;
+}
+
+
+.box-2{
+    background-color: green;
+    width: 20rem;
+    height: 10rem;
+}
+.box-2:hover{
+    position: relative;
+    z-index: 5;
+}
+
+
+.box-3{
+    background: var(--gradient);
+    width: 12rem;
+    height: 12rem;
+
+    border-radius: 50% 0 0 50%;
+}
+
+.box-3:hover{
+    position: relative;
+    z-index: 5;
+}
+
+.box-4{
+    width: 20rem;
+    height: 10rem;
+    background: var(--gradient);
+
+    border-radius: 50% 50% / 100% 100% 0 0;
+
+    position: relative;
+    z-index: 100;
+}
+
+.box-5{
+    --size: 5rem;
+
+    width: 0;
+    height: 0;
+
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: calc(var(--size) * 2) solid red;
+
+}
+
+.box-5:hover{
+    border-left: var(--size) solid green;
+    border-right: var(--size) solid blue;
+}
+
+.box-6{
+    background: linear-gradient(lime, darkgreen);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50% 0 50% 0;
+
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    z-index: 10;
+
+    transform-origin: right ;
+    animation: rotar 5s linear infinite;
+}
+
+.element{
+    position: absolute;
+    inset: .3rem;
+    background-color: black;
+    border-radius: 50% 0 50% 0;
+}
+
+.box-7{
+    background-color: black;
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 1000;
+
+    &::after{
+        content: '';
+        display: block;
+        width: 1.2rem;
+        height: 1.2rem;
+
+        position: absolute;
+        background: red;
+
+        bottom: calc(1.2rem * -1);
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
+}
+
+
+
+
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+/*
+
+Trabajar con variables en css
+
+:root{
+    --primer-color: rgb(13, 255, 0);
+    --segundo-color:rgb(255, 239, 12);
+    --black:rgb(250, 14, 14);
+
+    --principal-size: 10rem;
+
+}
+
+body{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    background: var(--black);
+}
+
+
+div{
+    --tercer-color: gold;
+    width: var(--principal-size);
+    height: var(--principal-size);
+}
+
+.box-1{
+    background: var(--tercer-color);
+}
+
+.box-2{
+    background-color: var(--segundo-color);
+}
+
+.box-3{
+    
+
+    background-color: var(--primer-color);
+} */
+

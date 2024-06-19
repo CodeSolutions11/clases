@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div{
+    margin: 30px;
+}
+
+.buttom{
+
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 5px;
+
+   
+
+}
+
+.buttom:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.div-1 {
+
+
+    background-color: black;
+
+    width: 100px;
+    height: 150px;
+
+    margin: 15px 0 20px 20px;
+
+    border: 10px solid red;
+    border-radius: 10px;
+
+    color: red;
+
+    padding: 15px 8px 0 10px;
+
+    overflow: hidden;
+
+}
+
+
+.div-2{
+    
+    background-color: red; 
+
+
+    width: 200px;
+    height: 150px;
+
+    margin-left: 20px;
+
+    border: 10px solid black;
+    border-radius: 15px;
+
+    padding: 10px;
+
+    overflow: scroll;
+
+}
+
+.div-3{
+    background-color: greenyellow;
+
+    width: 300px;
+    height: 50px;
+
+    overflow: scroll;
+
+    margin: 20px;
+
+    border: 5px solid blueviolet;
+}
