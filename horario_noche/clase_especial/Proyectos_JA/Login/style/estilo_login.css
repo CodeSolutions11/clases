@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    height: 100vh;
+    background-image: url(/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+    align-items: center;
+    justify-content: center;
+
+    display:flex;
+}
+
+/* Contenedor  Titulo */
+
+.container{
+    width: 25rem;
+    height: 30rem;
+    padding: 2rem;
+    background-image: url(/img/bg0.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    border-radius: .5rem;
+
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    position:relative;
+    
+    box-shadow: 10px 10px 5px 0px rgba(74,72,74,1);
+    
+}
+
+/* -- Animacion Contenedor  Titulo -- */
+
+.container::before, .container::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    border: .2rem solid transparent;
+     
+    width: 0;
+    height: 0;
+}
+
+/* -- Animacion borde del Contenedor -- */ 
+
+.container::before {
+    top: 0;
+    left: 0;
+    border-top-color: #8ca3ff;;
+    border-right-color: #f73af7;
+
+    animation: border 8s infinite;
+}
+
+.container::after {
+    bottom: 0;
+    right: 0;
+    animation: border 8s 4s infinite, borderColor 8s 4s infinite;
+}
+
+@keyframes border {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    25% {
+      width: 100%;
+      height: 0;
+    }
+    50% {
+      width: 100%;
+      height: 100%;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+    }
+}
+
+@keyframes borderColor {
+  0% {
+    border-bottom-color: #f73af7;
+    border-left-color: #8ca3ff;
+  }
+  50% {
+    border-bottom-color: #f73af7;
+    border-left-color: #8ca3ff;
+  }
+  51% {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+.title{
+    
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* -- Estilo Class  login -- */
+
+.login {
+    
+    width: 20rem;
+    padding: 2rem;
+    margin: .5rem;
+    
+    background-color: #0c5586;     
+    border-radius: .2rem;
+
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+}
+
+/* -- Estilo de los input -- */
+
+.input {
+
+    height: 40px;
+    width: 15rem;
+    font-size: 20px;
+    color: #1b262c;
+    
+    display: block;
+
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: .2rem;
+}
+
+.input::placeholder {
+    color: #1a1919;
+
+}
+
+/* -- Estilo Boton -- */
+
+.button {
+    width: 50%;
+    height: 2rem;
+    margin-top: 10px;
+    font-size: 1rem;
+    color:#fff;
+
+    border: solid #3df3e4d2 1px;
+    background: transparent;
+    cursor:pointer;
+    transition: all 1s;
+}
+
+/* -- Animacion del Boton -- */
+
+.button:hover{
+    animation: animar-boton 1s infinite linear;
+    transition: all 1s;
+}
+@keyframes animar-boton {
+    0% {
+          transform: translateY(-5px)
+} 50% {
+          transform: translateY(0)
+} 100% {
+          transform: translateY(-5px)
+}
+}
+
+/* -- Estilo  link --*/
+
+.login-links{
+    color: #fff;
+    
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 10rem;
+}
+
+.login-links .link{
+    margin: .5rem;
+    font-size: .9rem;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+
+    text-decoration: none;
+
+}
+

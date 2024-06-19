@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sedan', sans-serif;
+    font-size: 20px; 
+      
+}
+
+ .container-podcast{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "navbar"
+        "content-podcast"
+        "footer"
+    ;
+    grid-template-rows: 15% 1fr 10%;
+    
+ }
+
+ .navbar{
+    /* width: 100%;
+    height: 15%; */
+    background-color: fuchsia;
+    grid-area: navbar;
+ }
+
+ .content-podcast{
+    /* width: 100%;
+    height: 75%; */
+    background-color: rgb(234, 219, 201);
+    grid-area: content-podcast;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+ }
+
+ .content-podcast .section-1{
+   background-color: hotpink;
+   display: grid;
+   grid-template-rows: 45% 1fr 10%;
+   place-items: center;
+   padding: .5rem;
+   padding-top: 1rem;
+
+ }
+
+ .general-text{
+    width: 85%;
+    text-align: justify;
+    display: grid;
+    gap: .5rem;
+ }
+ .general-text p{
+    font-size: .7rem;
+ }
+
+ .button{
+    /* width: 11.5rem; */
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: .3rem;
+    border-radius: 2rem;
+
+ }
+
+
+ .video-principal{
+    height: 100%;
+
+ }
+
+ .content-podcast .section-2{
+    background-color: rgb(219, 142, 180);
+    
+
+ }
+
+ .box-1{
+   background-color: red;
+   ma: 80%;
+   width: 100%;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-template-rows: 10% 1fr 10% 1fr ;
+
+   overflow: hidden;
+ }
+
+.box-1 .container-image{
+   grid-row: 1/3;
+   grid-column: 1/2;
+   overflow: hidden;
+}
+
+ .box-2{
+   background-color: blue;
+   height: 20%;
+   width: 100%;
+ }
+
+ /* .sections-photo-presenters{
+   height: 80%;
+   width: 100%;
+   background-color: aquamarine;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 10% 1fr 10% 1fr; 
+
+
+
+ }
+
+ .icons{
+   height: 20%;
+   width: 100%;
+ } 
+
+.photo-presenters{
+   width: 100%;
+   height: 100%;
+
+ } */
+
+
+ .footer{
+    /* width: 100%;
+    height: 10%; */
+    background-color: fuchsia;
+    grid-area: footer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+ }

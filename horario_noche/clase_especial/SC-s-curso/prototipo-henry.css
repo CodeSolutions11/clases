@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bunya PERSONAL', sans-serif;
+    
+}
+
+body{
+    max-width: 100vw;
+    height: 200vh;
+    background-color: black;
+
+
+}
+
+/******************** PAGINA UNO ********************/
+.container{
+    max-width: 100%;
+    height: 50%;
+    background-color: black;
+    color: white;
+
+
+    display: grid;
+    /* gap: .5rem; */
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 40% 3% 20% 1fr 10%;
+
+    grid-template-areas:
+        "logo logo logo"
+        "arrow arrow arrow"
+        "title title title"
+        "paragraph paragraph paragraph"
+        "footer footer footer"
+
+    ;
+}
+
+.head{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+
+    grid-area: logo;
+
+
+}
+
+.logo{
+    width: 25%;
+    height: 70%;
+    margin-left: 37.5%;
+    margin-top: 5%;
+
+
+
+
+}
+
+.arrows{
+    background-color: black;
+    grid-area: arrow;
+
+    display: flex;
+    align-items:self-end;
+}
+
+.button-l{
+    width: 5%;
+    height: 30%;
+    background-color: white;
+
+    margin: 0 28rem 0 1rem;
+
+    grid-area: button-l;
+
+}
+
+.button-r{
+    width: 5%;
+    height: 30%;
+    background-color: white;
+
+    margin: 0 1rem 0 28rem;
+
+    grid-area: button-r;
+}
+
+.title{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    font-size: 3rem;
+
+    
+
+    display: flex;
+    align-items:start;
+
+    grid-area: title;
+}
+
+.title .h2{
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.paragraph{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: gray;
+
+    font-size: 2rem;
+
+    margin-top: 1rem;
+
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+
+    grid-area: paragraph;
+}
+
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 5%;
+
+    gap: 1rem;
+
+    display: flex;
+
+    justify-content: center;
+
+    grid-area: footer;
+}
+
+.footer .linea-1{
+    width: 8%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.footer .linea{
+    width: 8%;
+    height: 100%;
+    background-color: gray;
+}
+
+
+/******************** PAGINA DOS ********************/
+
+.container-2{
+    width: 100%;
+    height: 50%;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    
+
+}
+
+
+
+
+
+/************************** BOX 1 **********************/
+
+.container-2 .box-1{
+    width: 50%;
+    height: 90%;
+    background-color: black;
+
+    color: white;
+
+    padding-left: 3rem;
+
+    margin-top: 20rem;
+}
+
+.container-2 .box-1 .element{
+    width: 100%;
+    
+    background-color: black;
+
+    margin: 3rem 0 0 0;
+
+    
+
+}
+
+.container-2 .box-1 .element .subtitle{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.container-2 .box-1 .element .paragraph-2{
+    width: 100%;
+    color: gray;
+    text-align: left;
+    font-size: 0.05;
+}
+
+.container-2 .box-1 .element .link{
+    color: yellow;
+    font-size: 0.7rem;
+}
+
+
+/************************** BOX 2 **********************/
+
+.box-2{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+   
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+   
+
+}
+
+.container-2 .box-2 .cubic{
+    height: 30rem;
+    
+}
+
+
+
+
+
+
+
+

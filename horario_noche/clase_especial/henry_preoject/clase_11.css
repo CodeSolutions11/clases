@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+
+
+h1{
+    background-color: red;
+
+    width: 70%;
+    height: 5rem;
+}
+
+p{
+    background-color: green;
+
+
+}
+
+/* body{
+    height: 100vh;
+    background-color: black;
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+} */
+
+
+/* 
+.box-1{
+    border: 1rem solid red;
+
+    width: 70vw;
+    height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.box-2{
+    border: .5rem dashed greenyellow;
+
+    width: 70%;
+    height: 70%;
+
+
+}
+
+.box-2 div{
+    width: 30%;
+    height: 30%;
+}
+
+.box-2 .box-3{
+    background-color: blueviolet;
+    
+
+    
+    width: 10%;
+    height: 10%;
+
+    position: absolute;
+    
+    right: 0;
+    top: 0;
+
+   
+
+}
+
+.box-4{
+    background-color: yellow;
+
+}
+
+.box-5{
+    background-color: lightblue;
+
+
+
+}
+
+.box-6{
+    background-color: pink;
+}
+ */

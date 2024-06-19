@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:black;
+}
+
+.container{
+    width: 30rem;
+    height: 70vh;
+    background-color: white;
+
+    display: grid;
+    gap: .3rem;
+
+    text-align: center;
+
+    grid-template-columns: 25% repeat(4);
+    grid-template-rows: 8% 1fr 1fr 20%;
+
+    grid-template-areas:
+    "navbar navbar navbar navbar"
+    "sidebar-left main main main"
+    "sidebar-left content-1 content-2 content-3"
+    "sidebar-left footer footer footer";
+}
+
+.box-1{
+    background-color: antiquewhite;
+    grid-area: navbar;
+    border-radius: .4rem;
+    font-size: .5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    
+
+}
+
+.box-2{
+    background-color: aqua;
+    grid-area: sidebar-left; 
+    border-radius: .4rem;
+    font-size: .5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-3{
+    background-color:lightblue;
+    grid-area: main;
+    border-radius: .4rem;
+    font-size: .5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content:center              ;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.box-4{
+    background-color: antiquewhite;
+    grid-area: content-1;
+    border-radius: .4rem;
+    font-size: .5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-5{
+    background-color: aquamarine;
+    grid-area: content-2;
+    border-radius: .4rem;
+    font-size: .5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-6{
+    background-color: lightgreen;
+    grid-area: content-3;
+    border-radius: .4rem;
+    font-size: .5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-7{
+    background-color: darkgray;
+    grid-area: footer;
+    border-radius: .4rem;
+    font-size: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (width <= 430px) {
+    .container{
+        width: 100vw;
+        height: 100vh;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 6.5%) 30% repeat(3,15%) 1fr;
+
+        grid-template-areas:
+        "navbar"
+        "sidebar-left"
+        "main"
+        "content-1"
+        "content-2"
+        "content-3"
+        "footer";
+
+        padding: .3rem;
+    }
+}
