@@ -1,0 +1,12 @@
+{
+    "name": "Carlos",
+    "email": "jesus@gmail.com",
+    "number": 26,
+    "Direction": {
+        "Country": "Venezuela",
+        "City": "Caracas"
+    },
+    "City": ["Caracas", "Ny", "ciudad de panamá"],
+    "bool": true,
+    "null": null
+}
