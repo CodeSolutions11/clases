@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Tercera clase de html5">
+    <meta name="keyworks" content="html5, clase html5">
+    <meta name="author" content="CodeSolutions">
+    
+    <title>Tercera clase de Html5</title>
+</head>
+<body>
+    <h1>Etiquetas multimedia</h1>
+
+    <p><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</b> Fuga maxime eaque ad aut ratione, amet, at minus iste consequuntur ipsam sequi harum et, doloremque quam eius suscipit perspiciatis sit velit?</p>
+
+    <a href="contacto.html">Enlace a contacto</a>
+
+    <hr>
+
+    <h2>Etiqueta y atributos de imagen</h2>
+
+    <!-- con la etiqueta img creamos imagenes con html, el atributo src sirve para colocar la ubicacion de una imagen, el atributo alt sirve colocar un texto alternativo en caso de que la imagen falle -->
+
+
+    <!-- imagen local -->
+    <img src="images/code.png" alt="Logo de Code" width="300">
+
+    <!-- imagen externa -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Dalmatien.jpg" alt="imagen de dalmata" width="400" height="350">
+
+    <hr>
+
+    <h3>Etiqueta y atributos de audio</h3>
+
+    <!-- formatos recomendados para audio: .mp3 .opus .ogg -->
+    <audio src="audios/audio.mp3" controls muted loop autoplay></audio>
+
+    <hr>
+
+    <h3>Etiqueta y atributos de video</h3>
+
+    <video src="videos/tests.mp4" width="400" controls muted  loop></video>
+
+    <iframe width="460" height="260" src="https://www.youtube.com/embed/rDbiZWEdFmE?si=DEwN-y1QXxNzMiGA&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <hr>
+ 
+    <h3>Validaciones con html</h3>
+
+    <form action="" method="get">
+        <span>Ingresar Nombre:  </span><input type="text" ><br>
+        <span>Ingresar email:  </span><input type="email" ><br>
+        <span>Ingresar Password</span> <input type="password"><br>
+        <span>Igresar direccion de vivienda</span><br>
+        <textarea minlength="15" maxlength="50"  cols="20" rows="5"></textarea>
+
+        <button><a href="contacto.html">Enviar</a></button>
+
+    </form>
+
+</body>
+</html>
