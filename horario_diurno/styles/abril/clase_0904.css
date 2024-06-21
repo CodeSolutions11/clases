@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+    display: grid;
+
+    grid-template-columns: 20rem 1fr 15%;
+    grid-template-rows: 15% 1fr 10%;
+
+    grid-template-areas: 
+        "sidebar-left navbar  sidebar-right"
+
+        "sidebar-left  content  sidebar-right"
+
+        "sidebar-left footer  sidebar-right"
+    ;
+
+    gap: .3rem;
+
+    padding: .3rem;
+}
+
+/* ********** Inicio de navbar ************ */
+
+.navbar{
+    background-color: lightgreen;
+
+    grid-area: navbar;
+}
+
+
+/* ********** Inicio de sidebar-left ************ */
+
+.sidebar-left{
+    background-color: green;
+
+    grid-area: sidebar-left;
+}
+
+/* ********** Inicio de content ************ */
+
+.content{
+    background-color: crimson;
+
+    grid-area: content;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.content_section-1{
+    background-color: yellow;
+
+}
+
+.content_section-2{
+    background-color: blue;
+}
+
+.content_section-3{
+    background-color: blue;
+}
+
+.content_section-4{
+    background-color: yellow;
+}
+
+/* ********** Inicio de sidebar-right ************ */
+
+.sidebar-right{
+
+    background-color: blueviolet;
+
+    grid-area: sidebar-right;
+
+}
+
+/* ********** Inicio de footer ************ */
+
+.footer{
+
+    background-color: lightblue;
+
+    grid-area: footer;
+
+}
+
+
+
+/* ************* @Medias ********************* */
+
+@media (width <= 1440px){
+
+    .container{
+        height: 200vh;
+
+        grid-template-columns: 20rem 1fr;
+        grid-template-rows: 10% 1fr 40% 5%;
+
+        grid-template-areas: 
+            "sidebar-left navbar"
+
+            "sidebar-left  content"
+
+            "sidebar-left sidebar-right"
+
+            "sidebar-left footer"
+        ;
+
+    }
+
+
+}
+
+
+@media (width <=430px){
+
+    .container{
+        height: 200vh;
+
+        grid-template-columns:  1fr;
+        grid-template-rows: 10% 1fr 40% 5%;
+
+        grid-template-areas: 
+            " navbar"
+
+            "  content"
+
+            " sidebar-right"
+
+            " footer"
+        ;
+    }
+    
+    /* .container{
+        height: 200vh;
+
+        grid-template-columns: 45% 1fr;
+        grid-template-rows: 10% 1fr 40% 5%;
+
+        grid-template-areas: 
+            "sidebar-left navbar"
+
+            "sidebar-left  content"
+
+            "sidebar-left sidebar-right"
+
+            "sidebar-left footer"
+        ;
+    } */
+}

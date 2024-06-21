@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+    font-size: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+:root{
+    --color-primario: #41FE5D;
+    --color-secundario: #6EFF42;
+    --tercer-color:#0bb4da;
+    --cuarto-color:#42FFDF;
+    --black: #000;
+    --caculo: calc(20rem - 30vw);
+}
+
+body{
+
+    --white: var(#fff);
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--black);
+}
+
+.container{
+    background-color: var(--cuarto-color);
+    width: 20rem;
+    height: 25rem;
+
+    border-radius: .5rem;
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background-color: var(--color-primario);
+    background: linear-gradient(0deg,transparent, transparent, var(--color-primario), var(--color-primario), var(--color-primario));
+    width: 20rem;
+    height: 25rem;
+
+    transform-origin: bottom right;
+    animation: animation 5s linear infinite;
+    
+
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background-color: var(--color-secundario);
+    background: linear-gradient(0deg,transparent, transparent, var(--color-secundario), var(--color-secundario), var(--color-secundario));
+    width: 20rem;
+    height: 25rem;
+    animation: animation 5s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: 3s;
+}
+
+.line{
+    position: absolute;
+    /* top: 0; */
+    inset: 0;
+}
+
+
+.line::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background-color: var(--color-primario);
+    background: linear-gradient(0deg,transparent, transparent, var(--color-primario), var(--color-primario), var(--color-primario));
+    width: 20rem;
+    height: 25rem;
+
+    transform-origin: bottom right;
+    animation: animation 5s linear infinite;
+    animation-delay: -3s;
+}
+
+.line::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background-color: var(--color-secundario);
+    
+    background: linear-gradient(0deg,transparent, var(--color-secundario), var(--color-secundario), var(--color-secundario));
+    width: 20rem;
+    height: 25rem;
+
+    transform-origin: bottom right;
+    animation: animation 5s linear infinite;
+    animation-delay: -6s;
+}
+
+@keyframes animation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.login{
+    padding: 2.5rem 2rem;
+    background-color: var(--tercer-color);
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    inset: .3rem;
+
+    z-index: 2;
+}
+
+.title-login{
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.input-login{
+    width: 15rem;
+    margin-top: 2rem;
+}
+
+
+.person{
+    color: black;
+    position: relative;
+    top: 2rem
+}
+
+.input-login .input{
+    width: 100%;
+    padding: .5rem 0 ;
+}
+
+.input-login_span{
+    color: gray;
+    /* padding: 1rem 0 .5rem; */
+}
+
+.login-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-links .link{
+    margin: .5rem 0;
+    font-size: .8rem;
+    color: gray;
+    text-decoration: none;
+}
+
+.button{
+    margin-top: .5rem;
+    padding: .5rem;
+    width: 10rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-weight: bold;
+    opacity: 80%;
+}

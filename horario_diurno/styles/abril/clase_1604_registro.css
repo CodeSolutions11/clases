@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+
+body{
+    height: 100vh;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    background-color: white;
+    width: 30rem;
+    height: 20rem;
+
+    border-radius: 1.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.register{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    padding: 2rem;
+
+    text-align: center;
+}
+
+.register input{
+    padding: .3rem;
+    border-radius: .3rem;
+}
+
+.btn-register{
+    background-color: blueviolet;
+    color: white;
+}
+
+
+/* *******************SIDEBAR *********************** */
+
+.sidebar{
+    border-radius: 5rem 0 0 5rem;
+    background-color: blueviolet;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 3rem;
+    text-align: center;
+
+    color: white;
+}
+
+.btn-login{
+    background-color: white;
+    color: blueviolet;
+    padding: .3rem;
+    border-radius: .3rem;
+
+    text-decoration: none;
+}
