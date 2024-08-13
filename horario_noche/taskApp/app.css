@@ -14,6 +14,7 @@
     --gradient: linear-gradient(to bottom, var(--blue-dark), var(--blue-light));
     --purple: #a708d6;
 
+    --green: #0a0;
 }
 
 body{
@@ -120,6 +121,37 @@ body{
 .list .li{
     list-style: none;
     background: var(--purple);
+
+    padding: .5rem 1rem;
+    border-radius: .7rem;
+    
+    margin: .3rem 0;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.icons{
+    width: 2.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-check-circle, .fa-trash, .fa-circle{
+    cursor: pointer;
+}
+
+.task_realized{
+    list-style: none;
+    background: var(--green);
 
     padding: .5rem 1rem;
     border-radius: .7rem;
