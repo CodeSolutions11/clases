@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background: #000;
+            color: #fff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 3rem;
+        }
+
+        .sec-1{
+            width: 30%;
+        }
+        input{
+            padding: .5rem 1rem;
+        }
+
+        .sec-2{
+            width: 40%;
+            height: 40%;
+            background: #999;
+
+            text-align: center;
+        }
+        ul{
+            text-align: start;
+        }
+
+        li{
+            list-style: none;
+
+        }
+    </style>
+</head>
+<body>
+
+    <section class="sec-1">
+        <h1>Buscar cliente</h1>
+        <input class="inputBuscar" type="text" placeholder="Buscar Cliente">
+    </section>
+    <section class="sec-2">
+        <h2>Datos del Cliente</h2>
+        <ul class="list"></ul>
+
+    </section>
+
+
+    <script src="cliente.js"></script>
+</body>
+</html>

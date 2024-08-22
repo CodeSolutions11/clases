@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #000;
+            color: #fff;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, button{
+            padding: .5rem 1rem;
+        }
+
+        .btn:hover{
+            background: #000;
+            color: #fff;
+
+            border: .2rem solid #fff;
+
+            cursor: pointer;
+        }
+    </style>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    
+    <button class="btnBuscar">Buscar Cliente</button>
+    <form>
+        <h1>Registrar Cliente</h1>
+
+        <input type="text" placeholder="Ingresar Nombre">        
+        <input type="text" placeholder="Ingresar ciudad">        
+        <input type="text" placeholder="correo">        
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -53,3 +53,18 @@ input, button{
 
     gap: 1rem;
 }
+
+.registrado{
+    position: absolute;
+
+    background: #999;
+
+    width: 15rem;
+    height: 15rem;
+
+    left: 12rem;
+}
+
+.delete{
+    cursor: pointer;
+}

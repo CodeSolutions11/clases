@@ -3,7 +3,7 @@ const name = document.querySelector('.name')
 const email = document.querySelector('.email')
 const phone = document.querySelector('.phone')
 const btn = document.querySelector('.btn')
-
+const body = document.querySelector('body')
 // Elementos de la section-2
 const tbody = document.querySelector('tbody')
 
@@ -50,7 +50,18 @@ btn.addEventListener('click', ()=>{
 
     customer_id++
 
-    alert("Cliente registrado satisfactoriamente")
+    body.insertAdjacentHTML('afterbegin', `
+        <div class="registrado">
+        <h3>Usuario Registrado!!!</h3>
+        <i class="fa-solid fa-delete-left delete"></i>
+    </div>`)
+
+    const registrado = document.querySelector('.registrado')
+    const iconDelete = document.querySelector('.delete')
+
+    iconDelete.addEventListener("click", ()=>{
+        registrado.style.display = "none"
+    })
 })
 
 customer_list.forEach(customer => {
@@ -86,3 +97,6 @@ function mostrarDatos(customer){
 
     ul.innerHTML = datos
 }
+
+
+
