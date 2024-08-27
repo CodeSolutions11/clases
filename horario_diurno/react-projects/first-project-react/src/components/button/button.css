@@ -1,0 +1,18 @@
+button{
+    padding: .5rem 2rem;
+
+}
+
+.warning{
+    background: rgb(219, 149, 18);
+}
+
+.success{
+    background: #0f0;
+}
+
+button:hover{
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+
+
+    background: #000;
+    color: #fff;
+}
+
+img{
+    height: 10vh;
+    
+}
+
+ul{
+    width: 60%;
+    display: flex;
+
+    justify-content: end;
+
+    gap: 1rem;
+}
+
+li{
+    list-style: none;
+}
