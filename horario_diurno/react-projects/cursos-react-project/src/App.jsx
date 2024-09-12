@@ -3,6 +3,7 @@ import Nav from './components/Nav'
 import Banner from './components/Banner'
 import Cards from './components/Cards'
 import Cursos from './components/Cursos'
+import Category from './components/Category'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Cards name='Curso de NextJS' fecha='07/11' img='https://miro.medium.com/v2/resize:fit:1000/1*v3XndYeIsBtk4CkpMf7vmA.jpeg' />
       </div>
       <Cursos />
+      <Category />
     </>
   )
 }

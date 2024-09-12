@@ -41,6 +41,12 @@ const Cursos = () => {
                     >
                         BackEnd
                     </button>
+                    <button 
+                        className='m-1 border-sky-500 text-sky-700 hover:bg-sky-600 hover:text-white'
+                        onClick={()=>filterCategory('DataBase')}
+                    >
+                        DataBase
+                    </button>
                 </div>
             </div>
         </div>
