@@ -16,7 +16,7 @@ const Products = () => {
 
   return (
     <section className='max-w-[1640px] m-auto px-4 py-12'>
-        <h1>Apple Products</h1>
+        <h1 className='text-4xl text-sky-600 text-center font-bold'>Apple Products</h1>
 
         {/* Filters */}
 
@@ -50,7 +50,7 @@ const Products = () => {
             </div>
         </div>
 
-        <div className='grid grid-cols-3 gap-6 pt-4'>
+        <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4'>
             {product.map((item, index)=>(
                 <div
                     key={index}
