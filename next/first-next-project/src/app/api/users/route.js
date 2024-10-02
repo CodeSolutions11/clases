@@ -2,9 +2,22 @@ import {conn} from "@/libs/mariadb"
 import { NextResponse } from "next/server"
 
 export const GET = async ()=>{
-    const result = await conn.query("SELECT * FROM users")
+    
+    try {
+        const result = await conn.query("SELECT * FROM users")
 
-    console.log(result);
+        console.log(result);
 
-    return NextResponse.json(result);
+        return NextResponse.json(result);
+    } catch (error) {
+        return NextResponse.json(
+            {
+                message: result.error
+            },
+            {
+                status: 500
+            }
+        )
+    }
+
 } 
