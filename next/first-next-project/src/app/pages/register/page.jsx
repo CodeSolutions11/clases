@@ -5,8 +5,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 
 const Register = () => {
-
-    const router = useRouter()
+  const router = useRouter();
 
   const {
     register,
@@ -15,15 +14,14 @@ const Register = () => {
     formState: { errors },
   } = useForm();
 
-
-  const onSubmit = handleSubmit(async data => {
-    const res = await axios.post("/api/solicitudes", data)
+  const onSubmit = handleSubmit(async (data) => {
+    const res = await axios.post("/api/solicitudes", data);
     console.log(res);
 
-    if(res.status == 200){
-        router.refresh()
+    if (res.status == 200) {
+      router.push("/pages/login");
+      router.refresh();
     }
-
   });
 
   return (
@@ -46,9 +44,7 @@ const Register = () => {
             })}
           />
           {errors.name && (
-            <span className="text-red-600 text-sm">
-              {errors.name.message}
-            </span>
+            <span className="text-red-600 text-sm">{errors.name.message}</span>
           )}
 
           <label htmlFor="">Email</label>
@@ -98,31 +94,29 @@ const Register = () => {
                 value === watch("password") || "Las contraseñas no coinciden",
             })}
           />
-
-          
-
         </section>
 
         <section className="flex flex-col">
-            <label htmlFor="plan">Select plan</label>
-            <select {...register("plan")}>
-                <option value="1">ORO</option>
-                <option value="2">PLATA</option>
-                <option value="3">DIAMANTE</option>
-            </select>
-            <div>
-                <h3>Total a pagar</h3>
-                {watch().plan == 1 && <span>100$</span>}
-                {watch().plan == 2 && <span>150$</span>}
-                {watch().plan == 3 && <span>200$</span>}
-            </div>
+          <label htmlFor="plan">Select plan</label>
+          <select {...register("plan")}>
+            <option value="1">ORO</option>
+            <option value="2">PLATA</option>
+            <option value="3">DIAMANTE</option>
+          </select>
+          <div>
+            <h3>Total a pagar</h3>
+            {watch().plan == 1 && <span>100$</span>}
+            {watch().plan == 2 && <span>150$</span>}
+            {watch().plan == 3 && <span>200$</span>}
+          </div>
 
-            <input type="text" placeholder="Nro de referencia de pago" 
-                {...register("referencia_pago", {required:true})}
-            />
+          <input
+            type="text"
+            placeholder="Nro de referencia de pago"
+            {...register("referencia_pago", { required: true })}
+          />
 
-
-            <input type="submit" />
+          <input type="submit" />
         </section>
 
         {errors.confirmPassword && (
@@ -130,8 +124,6 @@ const Register = () => {
             {errors.confirmPassword.message}
           </span>
         )}
-
-        
 
         <pre>{JSON.stringify(watch(), null, 2)}</pre>
       </form>

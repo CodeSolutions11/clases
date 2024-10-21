@@ -30,7 +30,7 @@ const Login = () => {
         if(resp.error){
             setError(resp.error)
         }else{
-            router.push("/dashboard")
+            router.push("/auth/dashboard")
             router.refresh()
         }
     })

@@ -3,6 +3,25 @@ import { NextResponse } from "next/server"
 import bcrypt from "bcrypt"
 
 
+export const GET = async ()=>{
+    try {
+        const result = await conn.query("SELECT * FROM solicitudes_usuarios")
+        console.log(result)
+
+        return NextResponse.json(result)
+    } catch (error) {
+        return NextResponse.json(
+            {
+                message: error.message
+            },
+            {
+                status: 500
+            }
+        )
+    }
+}
+
+
 export const POST = async (req)=>{
     try {
         const data = await req.json()

@@ -4,13 +4,14 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-around">
+    <nav className="flex justify-around items-center">
         <Link href={"/"} >CodeSolutions</Link>
 
         <ul className="flex gap-4">
             <li><Link href={"/"}>Home</Link></li>
-            <li><Link href={"/auth/login"}>Login</Link></li>
-            <li><Link href={"/register"}>Registro</Link></li>
+            <li><Link href={"/pages/contact"}>Contact</Link></li>
+            <li><Link href={"/pages/login"}>Login</Link></li>
+            <li><Link href={"/pages/register"}>Registro</Link></li>
         </ul>
     </nav>
   )

@@ -17,7 +17,7 @@ export const authOptions = {
                 console.log(credentials)
                 console.log(req)
 
-                const userFound = await conn.query(`SELECT * FROM solicitudes_usuarios where email="${credentials.email}"`)
+                const userFound = await conn.query(`SELECT * FROM users where email="${credentials.email}"`)
 
                 console.log(userFound[0])
                 if(!userFound && userFound == []) throw new Error("user not found")
@@ -42,7 +42,7 @@ export const authOptions = {
     ],
     secret: process.env.NEXTAUTH_SECRET,
     pages:{
-        signIn: "/auth/login"
+        signIn: "/pages/login"
     }
 
 }
