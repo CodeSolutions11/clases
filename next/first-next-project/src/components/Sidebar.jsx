@@ -1,11 +1,22 @@
 import Link from "next/link";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth/next";
+import axios from "axios";
+
+// const loadUSer =async()=>{
+//   const sesion = await getServerSession(authOptions);
+//   const user = sesion.user;
+//   const {data} = await axios.get("http://localhost:3000/api/roles", user.email)
+
+//   return data
+// }
 
 const Sidebar = async () => {
   const sesion = await getServerSession(authOptions);
   const user = sesion.user;
   console.log(user);
+
+
 
   return (
     <aside className="bg-slate-400">

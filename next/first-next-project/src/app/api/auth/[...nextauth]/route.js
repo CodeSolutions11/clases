@@ -17,7 +17,11 @@ export const authOptions = {
                 console.log(credentials)
                 console.log(req)
 
-                const userFound = await conn.query(`SELECT * FROM users where email="${credentials.email}"`)
+                const userFound = await conn.query(`
+                    SELECT * FROM users 
+                    INNER JOIN roles
+                    ON users.role_id = roles.role_id
+                    where email="${credentials.email}"`)
 
                 console.log(userFound[0])
                 if(!userFound && userFound == []) throw new Error("user not found")
