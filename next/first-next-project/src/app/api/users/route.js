@@ -4,7 +4,7 @@ import { NextResponse } from "next/server"
 export const GET = async ()=>{
     
     try {
-        const result = await conn.query("SELECT * FROM users INNER JOIN roles ON users.role_id = roles.role_id ")
+        const result = await conn.query("SELECT * FROM users")
 
         console.log(result);
 
