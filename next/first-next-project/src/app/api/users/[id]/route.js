@@ -6,7 +6,11 @@ export const GET = async (req, {params})=>{
         
         console.log(params)
 
-        const result = await conn.query(`SELECT * FROM users WHERE user_id =${params.id}`)
+        const result = await conn.query(`
+            SELECT * FROM users 
+            inner join roles
+            on users.role_id = roles.role_id
+            WHERE email="${params.id}"`)
 
         console.log(result)
 

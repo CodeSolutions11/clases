@@ -2,21 +2,22 @@ import Link from "next/link";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth/next";
 import axios from "axios";
+import LinkSignout from "./ui/LinkSignout";
 
-// const loadUSer =async()=>{
-//   const sesion = await getServerSession(authOptions);
-//   const user = sesion.user;
-//   const {data} = await axios.get("http://localhost:3000/api/roles", user.email)
 
-//   return data
-// }
+const loadUSer = async (email) => {
+  const { data } = await axios.get(`http://localhost:3000/api/users/${email}`);
+  return data;
+};
 
 const Sidebar = async () => {
   const sesion = await getServerSession(authOptions);
   const user = sesion.user;
-  console.log(user);
 
 
+
+  const user_role = await loadUSer(user.email);
+  console.log(user_role);
 
   return (
     <aside className="bg-slate-400">
@@ -25,12 +26,12 @@ const Sidebar = async () => {
         <span className="text-white">{user.email}</span>
       </div>
       <div className="h-[60%] flex flex-col gap-[2rem] items-center">
-        {user.email == "admin@admin.com" ? (
+        {user_role.role == "admin" ? (
           <>
             <Link href="/auth/dashboard">Dashboard</Link>
             <Link href="/auth/dashboard/newUsers">Solicitudes de usuarios</Link>
             <Link href="/auth/dashboard/users">usuarios Activos</Link>
-            <Link href="/api/auth/signout">Cerrar Sesión</Link>
+            <LinkSignout />
           </>
         ) : (
           <>
@@ -41,7 +42,7 @@ const Sidebar = async () => {
             <Link href="/auth/dashboard/updatePassword">
               Cambiar Contraseña
             </Link>
-            <Link href="/api/auth/signout">Cerrar Sesión</Link>
+            <LinkSignout />
           </>
         )}
       </div>
